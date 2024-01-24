@@ -41,7 +41,9 @@ const Header: React.FunctionComponent<HeaderProps> = ({
           <input
             className={styles.searchBar}
             value={searchQuery}
+            autoFocus
             onChange={handleSearchChange}
+            placeholder="Type something to search..."
           />
           <button
             className={styles.closeBtn}
