@@ -2,6 +2,8 @@
 
 A simple ReactJS application that displays a list of movies in cards. Users can scroll to load more movie details and use a search functionality to filter the displayed movies.
 
+[Visit the Deployed App](https://bangarusaivivek.github.io/diagnal-workshop/)
+
 ## Table of Contents
 
 - [Features](#features)
