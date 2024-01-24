@@ -20,7 +20,7 @@ A simple ReactJS application that displays a list of movies in cards. Users can 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bangarusaivivel/diagnal-workshop.git
+   git clone https://github.com/bangarusaivivek/diagnal-workshop.git
     ```
 
 2. Change to the project directory:
