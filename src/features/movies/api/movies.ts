@@ -20,7 +20,7 @@ export const useGetMoviesList = (props: MoviesDataProps) => {
       setLoading(true);
       const response = await api.get<MoviesData>(url);
       setData(response.data);
-      onSuccess(response.data);
+      onSuccess(response.data); // callback triggers with response data
     } catch (e) {
       setError(error);
     } finally {
@@ -30,7 +30,7 @@ export const useGetMoviesList = (props: MoviesDataProps) => {
 
   useEffect(() => {
     fetchData();
-  }, [page]); // Trigger the effect when the URL changes
+  }, [page]); // Trigger the effect when the page changes
 
   // Expose the state and a function to manually refetch the data
   return { data, error, loading, refetch: fetchData };

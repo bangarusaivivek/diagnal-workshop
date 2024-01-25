@@ -29,7 +29,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
   );
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const query = e.target.value;
+    const query = e.target.value.trimStart();
     setSearchQuery(query);
     debouncedSearch(query);
   };

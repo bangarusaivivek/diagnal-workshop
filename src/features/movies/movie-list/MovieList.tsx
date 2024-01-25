@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import styles from "./MovieList.module.scss";
 import { Header } from "../components/header";
 import { IMAGE_BASE_URL } from "../constants";
@@ -40,11 +40,11 @@ const MovieList = () => {
   };
 
   useEffect(() => {
-    setFilteredMoviesData(moviesData);
+    setFilteredMoviesData(moviesData); // update filter data when new moviesData appended
   }, [moviesData]);
 
   // custom hook to call api
-  const { loading } = useGetMoviesList({
+  useGetMoviesList({
     page,
     onSuccess: handleSuccess,
   });
@@ -74,7 +74,7 @@ const MovieList = () => {
     setIsFiltering(open);
     const filteredMovies = query
       ? moviesData.filter((movie) =>
-          movie.name.toLowerCase().includes(query.toLowerCase())
+          movie.name.toLowerCase().includes(query.trim().toLowerCase())
         )
       : moviesData;
     setFilteredMoviesData(filteredMovies);
