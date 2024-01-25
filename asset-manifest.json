@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/diagnal-workshop/static/css/main.5da44d7d.css",
-    "main.js": "/diagnal-workshop/static/js/main.0563be8f.js",
+    "main.css": "/diagnal-workshop/static/css/main.f5de6e2d.css",
+    "main.js": "/diagnal-workshop/static/js/main.c2c894e3.js",
     "index.html": "/diagnal-workshop/index.html",
-    "main.5da44d7d.css.map": "/diagnal-workshop/static/css/main.5da44d7d.css.map",
-    "main.0563be8f.js.map": "/diagnal-workshop/static/js/main.0563be8f.js.map"
+    "main.f5de6e2d.css.map": "/diagnal-workshop/static/css/main.f5de6e2d.css.map",
+    "main.c2c894e3.js.map": "/diagnal-workshop/static/js/main.c2c894e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.5da44d7d.css",
-    "static/js/main.0563be8f.js"
+    "static/css/main.f5de6e2d.css",
+    "static/js/main.c2c894e3.js"
   ]
 }
